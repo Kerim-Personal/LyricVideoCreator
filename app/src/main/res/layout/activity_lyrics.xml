@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#1C1C1E"
+    tools:context=".LyricsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şarkı Sözlerini Yapıştır"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/lyricsInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background"
+        android:gravity="top|start"
+        android:hint="Şarkı sözlerini buraya yapıştırın..."
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#8E8E93" />
+
+    <Button
+        android:id="@+id/confirmLyricsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Devam Et"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+
+</LinearLayout>
